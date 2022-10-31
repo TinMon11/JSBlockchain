@@ -36,7 +36,7 @@ class Blockchain {
         this.validateBlock(nuevoBloque) && this.blockchain.push(nuevoBloque)
     }
 
-    // Valido Bloque Hash = HashAnterior - Data que no sea vacía
+    // Valido Bloque Hash = HashAnterior - Data que no sea vacía - Hash inicie con 4 ceros.
     validateBlock(bloque) {
 
         if (this.height > 0) {
